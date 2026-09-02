@@ -1,11 +1,5 @@
-console.log('Hossam "shiref"');
-console.log("Hossam 'Shiref'");
-console.log('"Hossam Shiref"');
-console.log('Hossam "Shiref"');
-console.log("Hossam \\ Shiref");
-console.log(
-  "Hossam\
- Shiref\
- Ahmed",
-);
-console.log("Hossam\nShiref\nAhmed");
+let name_one = "Hossam";
+let name_two = "Shiref";
+document.write(name_one + " " + name_two);
+console.log(name_one + " " + name_two);
+console.log(name_one, name_two);
