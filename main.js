@@ -1,16 +1,11 @@
-let a = "I";
-let b = "Love";
-let c = "you";
-console.log(a + " " + b + " " + c);
-console.log(`${a} ${b} ${c}`);
-let name = "Hossam";
-let welcome = "Hello";
-let markUp = `
-    <div class="card">
-        <div class="child>
-            <h2>${welcome}</h2>
-             <p>${name}</p>
-        </div>
-    </div>`;
+let titleContent = "Elzero",
+  descriptionContent = "Elzero Web School",
+  dateContent = "25/10";
 
-document.write(markUp);
+let card = `<div class= "card">
+<h3>${"Hello"} ${titleContent}</h3>
+<p>${descriptionContent}</p>
+<span>${dateContent}</span>
+</div>`;
+
+document.write(card.repeat(4));
