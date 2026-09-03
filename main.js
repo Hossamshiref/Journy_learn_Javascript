@@ -1,2 +1,3 @@
-console.log(elzero.innerHTML); // object
-console.log(typeof elzero); // object
+console.log(
+  '\`I\'m In \n \\\\\nLove \\\\ """ \'\'\'\n++ With ++\n\\"""\\"""\n""JavaScript""\'\'',
+);
