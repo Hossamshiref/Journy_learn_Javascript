@@ -1,11 +1,15 @@
-let titleContent = "Elzero",
-  descriptionContent = "Elzero Web School",
-  dateContent = "25/10";
+let numberOne = 10;
+let numberTwo = 20;
+let stringOne = "10";
+let stringTwo = "20";
 
-let card = `<div class= "card">
-<h3>${"Hello"} ${titleContent}</h3>
-<p>${descriptionContent}</p>
-<span>${dateContent}</span>
-</div>`;
+// Ouput
+console.log(numberOne + "" + numberTwo); // Normal Concatenate => 1020
+console.log(stringOne + stringTwo); // Normal Concatenate => String
+console.log(`${numberOne}${numberTwo}`); // Template Literals Way => 1020
+console.log(`${stringOne}${stringTwo}`); // Template Literals Way => String
 
-document.write(card.repeat(4));
+console.log(numberOne + "\n" + numberTwo);
+
+console.log(`${numberOne}
+${numberTwo}`);
