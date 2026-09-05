@@ -1,3 +1,14 @@
-console.log(
-  '\`I\'m In \n \\\\\nLove \\\\ """ \'\'\'\n++ With ++\n\\"""\\"""\n""JavaScript""\'\'',
-);
+console.log(+100);
+console.log(+"100");
+console.log(+true);
+console.log(+false);
+console.log(+"-100");
+console.log(+"hossam");
+console.log(Number("100"));
+console.log(-100);
+console.log(-"100");
+console.log(-true);
+console.log(-false);
+console.log(-"-100");
+console.log(-"hossam");
+console.log(-Number("100"));
