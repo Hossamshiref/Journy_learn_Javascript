@@ -1,17 +1,11 @@
-let a = "10";
-let b = 20;
-let c = true;
+let a = 10;
+let b = "20";
+let c = 80;
 
-console.log(a + b);
-console.log(+a + b);
-console.log(a - b);
-console.log(a - c);
-console.log("" - 2);
-console.log(+"" - 2);
-console.log(-"" - 2);
-console.log(b + c);
-console.log(c + false);
-console.log(a + c);
-console.log(a + b + c);
-console.log(-a + b + c);
-console.log(+a + b + c);
+console.log(+b++); //20
+console.log(++c); //81
+console.log(a--); //10
+console.log(a); //9
+console.log(++a + +b++ + +c++ - +a++); //102
+console.log(++a + -b + +c++ - -a++ + +a); //97
+console.log(--c + +b + --a * a + --a - +true); //258
