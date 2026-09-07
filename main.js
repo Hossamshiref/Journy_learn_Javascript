@@ -1,9 +1,14 @@
-let points = 10;
-
-(points++, points++, points++);
-
-console.log(points); // 13
-
-(points--, points--, points--, points--, points--);
-
-console.log(points); // 8;
+console.log((100).toString());
+console.log((1000.55674).toFixed(2));
+console.log((1000.55474).toFixed(2));
+console.log(+"100 hossam");
+console.log(parseInt("100 hosaam"));
+console.log(parseFloat("100.556 hosaam"));
+console.log(Number.isInteger("100"));
+console.log(Number.isInteger(100.1));
+console.log(Number.isInteger(100));
+console.log(Number.isNaN(100));
+console.log(Number.isNaN(100.1));
+console.log(Number.isNaN("100"));
+console.log(Number.isNaN("Hossam"));
+console.log(Number.isNaN("hossam 10" / 2));
