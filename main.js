@@ -1,9 +1,24 @@
-console.log(Math.ceil(99.1));
-console.log(Math.floor(99.9));
-console.log(Math.round(99.5));
-console.log(Math.round(99.4));
-console.log(Math.trunc(99.987));
-console.log(Math.min(10, 20, 1, 50));
-console.log(Math.max(50, 200, 100, 30));
-console.log(Math.pow(2, 3));
-console.log(Math.random());
+/*
+  Number Challenge
+*/
+
+let a = 100;
+let b = 2_00.5;
+let c = 1e2;
+let d = 2.4;
+
+// Find Smallest Number In All Variables And Return Integer
+console.log(Math.round(Math.min(a, b, c, d)));
+
+// Use Variables a + d One Time To Get The Needed Output
+console.log(Math.pow(a, Math.ceil(d)) / c); // 10000
+
+// Get Integer "2" From d Variable With 4 Methods
+console.log(Math.round(d));
+console.log(Math.floor(d));
+console.log(Math.trunc(d));
+console.log(parseInt(d));
+
+// Use Variables b + d To Get This Valus
+console.log((Math.floor(b) / Math.ceil(d)).toFixed(2)); // 66.67 => String
+console.log(Math.ceil(b / Math.ceil(d))); // 67 => Number
