@@ -1,21 +1,20 @@
-let name = "  Hossam  ";
+let name = "Hossam shiref";
 
-console.log(name);
-console.log(name[2]);
-console.log(name[0]);
+console.log(name.indexOf("s"));
+console.log(name.indexOf("s", 4));
+console.log(name.indexOf("z"));
 
-console.log(name.charAt(3));
-console.log(name.charAt(10));
+console.log(name.lastIndexOf("s"));
+console.log(name.lastIndexOf("z"));
 
-console.log(name.length);
+console.log(name.slice(5, 11));
+console.log(name.slice(-6));
+console.log(name.slice(-6, -2));
+console.log(name.slice(2, -2));
 
-console.log(name.trim());
+console.log(name.repeat(3));
 
-console.log(name.toUpperCase());
-console.log(name.toLowerCase());
-
-console.log(name.trim().charAt(1).toUpperCase());
-console.log(name.trim().toUpperCase());
-
-name = name.trim();
-console.log(name);
+console.log(name.split());
+console.log(name.split(" "));
+console.log(name.split(""));
+console.log(name.split("", 6));
