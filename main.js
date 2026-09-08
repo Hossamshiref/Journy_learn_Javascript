@@ -1,24 +1,21 @@
-/*
-  Number Challenge
-*/
+let name = "  Hossam  ";
 
-let a = 100;
-let b = 2_00.5;
-let c = 1e2;
-let d = 2.4;
+console.log(name);
+console.log(name[2]);
+console.log(name[0]);
 
-// Find Smallest Number In All Variables And Return Integer
-console.log(Math.round(Math.min(a, b, c, d)));
+console.log(name.charAt(3));
+console.log(name.charAt(10));
 
-// Use Variables a + d One Time To Get The Needed Output
-console.log(Math.pow(a, Math.ceil(d)) / c); // 10000
+console.log(name.length);
 
-// Get Integer "2" From d Variable With 4 Methods
-console.log(Math.round(d));
-console.log(Math.floor(d));
-console.log(Math.trunc(d));
-console.log(parseInt(d));
+console.log(name.trim());
 
-// Use Variables b + d To Get This Valus
-console.log((Math.floor(b) / Math.ceil(d)).toFixed(2)); // 66.67 => String
-console.log(Math.ceil(b / Math.ceil(d))); // 67 => Number
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+
+console.log(name.trim().charAt(1).toUpperCase());
+console.log(name.trim().toUpperCase());
+
+name = name.trim();
+console.log(name);
