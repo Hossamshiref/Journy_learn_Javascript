@@ -1,4 +1,3 @@
-let myVar = "100.56789 Views";
+let num = 10;
 
-console.log(parseInt(myVar)); // 100
-console.log(parseFloat(parseFloat(myVar).toFixed(2))); // 100.57
+console.log(Number.isInteger(num) + true); // 2
