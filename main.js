@@ -1,26 +1,16 @@
-/*
-  String Challenge
-  All Solutions Must Be In One Chain
-  You Can Use Concatenate
-*/
+// Examples
+console.log(100_000); // 100000
+console.log(100000); // 100000
+console.log(5e4 + 5e4); // 100000
 
-let a = "Elzero Web School";
-
-// Include This Method In Your Solution [slice, charAt]
-console.log(a.charAt(2).toUpperCase() + a.slice(3, 6)); // Zero
-
-// 8 H
-console.log(a.charAt(13).toUpperCase().repeat(8)); // HHHHHHHH
-
-// Return Array
-console.log(a.slice(0, 6).split()); // ["Elzero"]
-
-// Use Only "substr" Method + Template Literals In Your Solution
-console.log(`${a.substr(0, 6)} ${a.substr(11)}`); // Elzero School
-
-// Solution Must Be Dynamic Because String May Changes
-console.log(
-  a.charAt(0).toLowerCase() +
-    a.slice(1, a.length - 1).toUpperCase() +
-    a.charAt(a.length - 1),
-); // eLZERO WEB SCHOOl
+// Your Solutions
+console.log(1e5); // 100000
+console.log(10e4); // 100000
+console.log(100e3); // 100000
+console.log(1000e2); // 100000
+console.log(10000e1); // 100000
+console.log(10_0000); // 100000
+console.log(100_000); // 100000
+console.log(1_00000); // 100000
+console.log(5e4 + 5e4); // 100000
+console.log(1000_00); // 100000
