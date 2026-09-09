@@ -1,1 +1,4 @@
-console.log(Number.MAX_SAFE_INTEGER.toString().length); // 16
+let myVar = "100.56789 Views";
+
+console.log(parseInt(myVar)); // 100
+console.log(parseFloat(parseFloat(myVar).toFixed(2))); // 100.57
