@@ -1,7 +1,7 @@
-let flt = 10.4;
-
-console.log(Math.floor(flt)); // 10
-console.log(Math.round(flt)); // 10
-console.log(Math.trunc(flt)); // 10
-console.log(parseInt(flt)); // 10
-console.log(flt.toFixed()); // 10
+let userName = "Elzero";
+console.log(userName[0].toLowerCase()); // e
+console.log(userName.charAt(0).toLowerCase()); // e
+console.log(userName[userName.indexOf("E")].toLowerCase()); // e
+console.log(userName.slice(0, 1).toLowerCase()); // e
+console.log(userName.substring(0, 1).toLowerCase()); // e
+console.log(userName.substr(0, 1).toLowerCase().repeat(3)); // eee
