@@ -1,10 +1,14 @@
-console.log(!true);
-console.log(!(10 == "10"));
-console.log(!(10 === "10"));
+let price = 100;
+let discount = false;
+let discountAmount = 40;
+let country = "KSA";
 
-console.log(10 > 5 && 10 == "10" && typeof "hossam" == typeof "ahmed");
-console.log(10 > 5 && 10 == "10" && "hossam" == "ahmed");
+if (discount === true && country === "Egypt") {
+  price -= discountAmount;
+} else if (discount === true || country === "Egypt") {
+  price -= discountAmount - 20;
+} else {
+  price -= discountAmount - 30;
+}
 
-console.log(10 > 5 || 10 === "10" || "hossam" == "ahmed");
-console.log(10 < 5 || 10 === "10" || "hossam" == "ahmed");
-console.log(10 > 5 || 10 == "10" || "hossam" == "ahmed");
+console.log(price);
