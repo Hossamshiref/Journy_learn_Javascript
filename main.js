@@ -1,16 +1,8 @@
-let day = 5;
-
-switch (day) {
-  case 0:
-    console.log("saturday");
-    break;
-  case 1:
-    console.log("monday");
-    break;
-  case 2:
-  case 3:
-    console.log("friday");
-    break;
-  default:
-    console.log("unknown day");
-}
+console.log(100 == "100"); // true
+console.log(100 < 1000); // true
+console.log(110 > 100 > 10 < 20); // true
+console.log(-10 !== "-10"); // true
+console.log(+-50 < -+"-40"); // true
+console.log(+10 < +-"-40"); // true
+console.log(+"10" !== -10); // true
+console.log(+20 > false); // true
