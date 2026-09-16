@@ -1,68 +1,41 @@
-// Edit What You Want Here
+let day = "   wednesday  ";
+// You Need To Remove Spaces And Make First Letter Capital => Friday
+day = day.trim();
+day = `${day[0].toUpperCase()}${day.slice(1)}`;
 
-let num1 = 11;
-let num2 = 10;
-let num3 = 11;
-let num4 = 33;
-
-/*
-  Do Not Edit Below This Line
-  Needed Output
-  True 7 Times
-*/
-
-// Condition 1
-
-if (num1 > num2) {
-  console.log("True");
-} else {
-  console.log("False");
+// let day = "Friday";
+// let day = "Saturday";
+// let day = "Sunday";
+// Output => "No Appointments Available"
+switch (day) {
+  case "Friday":
+  case "Saturday":
+  case "Sunday":
+    console.log("No Appointments Available");
+    break;
+  case "Monday":
+  case "Thursday":
+    console.log("From 10:00 AM To 5:00 PM");
+    break;
+  case "Tuesday":
+    console.log("From 10:00 AM To 6:00 PM");
+    break;
+  case "Wednesday":
+    console.log("From 10:00 AM To 7:00 PM");
+    break;
+  default:
+    console.log("Its Not A Valid Day");
 }
 
-// Condition 2
+// let day = "Monday";
+// let day = "Thursday";
+// Output => "From 10:00 AM To 5:00 PM"
 
-if (num1 > num2 && num1 < num4) {
-  console.log("True");
-} else {
-  console.log("False");
-}
+// let day = "Tuesday";.
+// Output => "From 10:00 AM To 6:00 PM"
 
-// Condition 3
+// let day = "Wednesday";
+// Output => "From 10:00 AM To 7:00 PM"
 
-if (num1 > num2 && num1 === num3) {
-  console.log("True");
-} else {
-  console.log("False");
-}
-
-// Condition 4
-
-if (num1 + num2 < num4) {
-  console.log("True");
-} else {
-  console.log("False");
-}
-
-// Condition 5
-
-if (num1 + num3 < num4) {
-  console.log("True");
-} else {
-  console.log("False");
-}
-
-// Condition 6
-
-if (num1 + num2 + num3 < num4) {
-  console.log("True");
-} else {
-  console.log("False");
-}
-
-// Condition 7
-
-if (num4 - (num1 + num3) + num2 === 21) {
-  console.log("True");
-} else {
-  console.log("False");
-}
+// let day = "World";
+// Output => "Its Not A Valid Day"
