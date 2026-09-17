@@ -1,29 +1,14 @@
-let names = ["Hossam", "Shiref", "Ahmed"];
+let names = ["Ahmed", "Hossam", "Shiref", "Ahmed"];
 
 console.log(names);
 
-names.unshift("Mariam", "Ganna");
+console.log(names.indexOf("Ahmed"));
+console.log(names.indexOf("Mariam"));
+console.log(names.indexOf("Ahmed", 2));
 
-console.log(names);
+console.log(names.lastIndexOf("Ahmed"));
+console.log(names.lastIndexOf("Mariam"));
+console.log(names.lastIndexOf("Ahmed", 2));
 
-names.push("Ali", "Mohamed");
-
-console.log(names);
-
-names.shift();
-
-console.log(names);
-
-let ex = names.shift();
-
-console.log(ex);
-console.log(names);
-
-names.pop();
-
-console.log(names);
-
-let ex2 = names.pop();
-
-console.log(ex2);
-console.log(names);
+console.log(names.includes("Ahmed"));
+console.log(names.includes("Mariam"));
