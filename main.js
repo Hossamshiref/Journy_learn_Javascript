@@ -1,22 +1,29 @@
-let names = ["Hossam", "Shiref", "Ahmed", ["Mariam", "Ganna"]];
-
-console.log(`Hello ${names[1]}`);
-console.log(`Hello ${names[0]}`);
-console.log(`Hello ${names[2]}`);
-console.log(`Hello ${names[3]}`);
-console.log(`Hello ${names[3][0]}`);
-console.log(`${names[3][1][3]}`);
-console.log(`${names[2][1]}`);
+let names = ["Hossam", "Shiref", "Ahmed"];
 
 console.log(names);
 
-names[1] = "Mohamed";
+names.unshift("Mariam", "Ganna");
+
 console.log(names);
 
-names[3][1] = "Osama";
+names.push("Ali", "Mohamed");
+
 console.log(names);
 
-names[3] = ["Ali", "Ibrahim"];
+names.shift();
+
 console.log(names);
 
-console.log(Array.isArray(names));
+let ex = names.shift();
+
+console.log(ex);
+console.log(names);
+
+names.pop();
+
+console.log(names);
+
+let ex2 = names.pop();
+
+console.log(ex2);
+console.log(names);
