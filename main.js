@@ -1,41 +1,22 @@
-let day = "   wednesday  ";
-// You Need To Remove Spaces And Make First Letter Capital => Friday
-day = day.trim();
-day = `${day[0].toUpperCase()}${day.slice(1)}`;
+let names = ["Hossam", "Shiref", "Ahmed", ["Mariam", "Ganna"]];
 
-// let day = "Friday";
-// let day = "Saturday";
-// let day = "Sunday";
-// Output => "No Appointments Available"
-switch (day) {
-  case "Friday":
-  case "Saturday":
-  case "Sunday":
-    console.log("No Appointments Available");
-    break;
-  case "Monday":
-  case "Thursday":
-    console.log("From 10:00 AM To 5:00 PM");
-    break;
-  case "Tuesday":
-    console.log("From 10:00 AM To 6:00 PM");
-    break;
-  case "Wednesday":
-    console.log("From 10:00 AM To 7:00 PM");
-    break;
-  default:
-    console.log("Its Not A Valid Day");
-}
+console.log(`Hello ${names[1]}`);
+console.log(`Hello ${names[0]}`);
+console.log(`Hello ${names[2]}`);
+console.log(`Hello ${names[3]}`);
+console.log(`Hello ${names[3][0]}`);
+console.log(`${names[3][1][3]}`);
+console.log(`${names[2][1]}`);
 
-// let day = "Monday";
-// let day = "Thursday";
-// Output => "From 10:00 AM To 5:00 PM"
+console.log(names);
 
-// let day = "Tuesday";.
-// Output => "From 10:00 AM To 6:00 PM"
+names[1] = "Mohamed";
+console.log(names);
 
-// let day = "Wednesday";
-// Output => "From 10:00 AM To 7:00 PM"
+names[3][1] = "Osama";
+console.log(names);
 
-// let day = "World";
-// Output => "Its Not A Valid Day"
+names[3] = ["Ali", "Ibrahim"];
+console.log(names);
+
+console.log(Array.isArray(names));
