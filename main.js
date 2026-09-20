@@ -1,12 +1,11 @@
 let names = ["Ahmed", "Hossam", "Mariam", "Esraa"];
+let friends = ["Osama", "Marie", "Rahad"];
+let family = ["EZZ", "Hesham", "Yassen"];
 
-console.log(names.slice());
-console.log(names.slice(0, 3));
-console.log(names.slice(1, 2));
+let all = names.concat(friends, family, "Moaz", 7, 9, ["Hsssam", "Maro"]);
 
-console.log(names);
+console.log(all);
 
-names.splice();
-names.splice(2, 1, "Shiref", "Ganna");
-
-console.log(names);
+console.log(all.join());
+console.log(all.join(" | "));
+console.log(all.join(" @ "));
