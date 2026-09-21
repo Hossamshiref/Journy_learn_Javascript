@@ -1,11 +1,9 @@
-let names = ["Ahmed", "Hossam", "Mariam", "Esraa"];
-let friends = ["Osama", "Marie", "Rahad"];
-let family = ["EZZ", "Hesham", "Yassen"];
+let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+let num = 3;
 
-let all = names.concat(friends, family, "Moaz", 7, 9, ["Hsssam", "Maro"]);
+// Method 1
+console.log(myFriends.slice(myFriends.indexOf("Ahmed"), num)); // ["Ahmed", "Elham", "Osama"];
 
-console.log(all);
-
-console.log(all.join());
-console.log(all.join(" | "));
-console.log(all.join(" @ "));
+// Method 2
+myFriends.pop();
+console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
