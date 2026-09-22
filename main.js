@@ -1,7 +1,19 @@
-let arrOne = ["C", "D", "X"];
-let arrTwo = ["A", "B", "Z"];
-let finalArr = [];
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
 
-// Write One Single Line Of Code
-finalArr = arrOne.concat(arrTwo).sort().reverse();
-console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+// Write 3 Solutions
+
+//1st
+if (haystack.includes(needle)) {
+  console.log("Found ");
+}
+
+//2nd
+if (haystack.indexOf(needle) !== -1) {
+  console.log("Found ");
+}
+
+//3rd
+if (haystack.lastIndexOf(needle) !== -1) {
+  console.log("Found ");
+}
