@@ -1,19 +1,8 @@
-let needle = "JS";
-let haystack = ["PHP", "JS", "Python"];
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
 
-// Write 3 Solutions
-
-//1st
-if (haystack.includes(needle)) {
-  console.log("Found ");
-}
-
-//2nd
-if (haystack.indexOf(needle) !== -1) {
-  console.log("Found ");
-}
-
-//3rd
-if (haystack.lastIndexOf(needle) !== -1) {
-  console.log("Found ");
-}
+// Your Code Here
+allArrs =
+  `${arr2[arr2.indexOf("F")]}${arr1[arr1.indexOf("X")]}${arr2[arr2.indexOf("Y")]}`.toLowerCase();
+console.log(allArrs); // fxy
