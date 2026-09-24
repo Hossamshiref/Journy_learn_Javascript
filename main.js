@@ -1,8 +1,11 @@
-let arr1 = ["A", "C", "X"];
-let arr2 = ["D", "E", "F", "Y"];
-let allArrs = [];
+//for loop
 
-// Your Code Here
-allArrs =
-  `${arr2[arr2.indexOf("F")]}${arr1[arr1.indexOf("X")]}${arr2[arr2.indexOf("Y")]}`.toLowerCase();
-console.log(allArrs); // fxy
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+console.log("============================================");
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
