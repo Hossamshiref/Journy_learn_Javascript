@@ -1,20 +1,23 @@
-let names = [1, 2, 3, "Hossam", "Shiref", "Ahmed", "Mohamed", "Osama"];
-let only = [];
-for (let i = 0; i < names.length; i++) {
-  if (typeof names[i] === "string") {
-    only.push(names.at(i));
+/*
+  Loop
+  - Nested Loops
+*/
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+
+let colors = ["Red", "Green", "Black"];
+
+let models = [2020, 2021];
+
+for (let i = 0; i < products.length; i++) {
+  console.log("#".repeat(12));
+  console.log(`## ${products[i]}`);
+  console.log("Colors:");
+  for (let j = 0; j < colors.length; j++) {
+    console.log(`-${colors[j]}`);
   }
-}
-console.log(only);
-
-console.log("=============================");
-
-// console.log(names[0]);
-// console.log(names[1]);
-// console.log(names[2]);
-// console.log(names[3]);
-// console.log(names[4]);
-
-for (let i = 0; i < names.length; i++) {
-  console.log(names[i]);
+  console.log("Models:");
+  for (let x = 0; x < models.length; x++) {
+    console.log(`*${models[x]}`);
+  }
 }
