@@ -1,12 +1,11 @@
 let start = 0;
-let swappedName = "elZerO";
+let mix = [1, 2, 3, "A", "B", "C", 4];
 
 // Output
-// "ELzERo"
+// 2
+// 3
+// 4
 
-for (let i = 0; i < swappedName.length; i++) {
-  if (swappedName[i] === swappedName[i].toLowerCase())
-    document.write(swappedName[i].toUpperCase());
-  if (swappedName[i] === swappedName[i].toUpperCase())
-    document.write(swappedName[i].toLowerCase());
+for (let i = start; i < mix.length; i++) {
+  if (Number.isInteger(mix[i]) && mix[i] !== +true) console.log(mix[i]);
 }
