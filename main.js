@@ -1,29 +1,12 @@
-let start = 1;
-let end = 6;
-let breaker = 2;
+let index = 10;
+let jump = 2;
 
-// Output
-// 1
-// -- 2
-// -- 4
-// 2
-// -- 2
-// -- 4
-// 3
-// -- 2
-// -- 4
-// 4
-// -- 2
-// -- 4
-// 5
-// -- 2
-// -- 4
-// 6
-// -- 2
-// -- 4
-
-for (let i = start; i <= end; i++) {
+for (let i = index; i > jump; i -= jump) {
   console.log(i);
-  console.log(`-- ${breaker}`);
-  console.log(`-- ${breaker * breaker}`);
+  // if (i < index / jump) break;
 }
+// Output
+// 10
+// 8
+// 6
+// 4
