@@ -1,12 +1,15 @@
-let index = 10;
-let jump = 2;
+let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
 
-for (let i = index; i > jump; i -= jump) {
-  console.log(i);
-  // if (i < index / jump) break;
-}
 // Output
-// 10
-// 8
-// 6
-// 4
+// "1 => Sayed"
+// "2 => Eman"
+// "3 => Mahmoud"
+// "4 => Osama"
+// "5 => Sameh"
+let counter = +false;
+for (let i = +false; i < friends.length; i++) {
+  if (friends[i].startsWith(letter.toUpperCase())) continue;
+  counter++;
+  console.log(`${counter} => ${friends[i]}`);
+}
