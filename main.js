@@ -1,11 +1,16 @@
-let start = 0;
-let mix = [1, 2, 3, "A", "B", "C", 4];
+let friends = ["Ahmed", "Sayed", "Ali", 1, 2, "Mahmoud", "Amany"];
+let index = 0;
+let counter = 0;
 
 // Output
-// 2
-// 3
-// 4
+// "1 => Sayed"
+// "2 => Mahmoud"
 
-for (let i = start; i < mix.length; i++) {
-  if (Number.isInteger(mix[i]) && mix[i] !== +true) console.log(mix[i]);
+while (index < friends.length) {
+  if (
+    Number.isInteger(friends[index]) === false &&
+    friends[index][counter] !== "A"
+  )
+    console.log(friends[index]);
+  index++;
 }
