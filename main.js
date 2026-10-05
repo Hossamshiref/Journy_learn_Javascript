@@ -1,9 +1,24 @@
-function sum(...numbers) {
-  let result = 0;
-  for (let i = 0; i < numbers.length; i++) {
-    result += numbers[i];
+function showInfo(
+  userName = "UnKnown",
+  userAge = "UnKnown",
+  hourRate = 0,
+  showSkills = "Yes",
+  ...userSkills
+) {
+  document.write(`<div>`);
+  document.write(`<h3>Welcome ${userName}</h3>`);
+  document.write(`<p>Age: ${userAge}</p>`);
+  document.write(`<p>Hour Rate: $${hourRate}</p>`);
+  if (showSkills === "yes") {
+    if (userSkills.length > 0) {
+      document.write(`Skills: ${userSkills.join(" | ")}`);
+    } else {
+      document.write(`Skills: No Skills Yet`);
+    }
+  } else {
+    document.write(`Skills Is Hidden`);
   }
-  return `Result Of Numbers Is ${result}`;
+  document.write(`</div>`);
 }
 
-document.write(sum(20, 30, 100));
+showInfo("Hossam", 15, 10, "yes", "Html", "CSS", "C++");
