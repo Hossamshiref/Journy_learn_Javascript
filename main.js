@@ -1,9 +1,9 @@
-function sayHello(userName = "UnKnown", age = "Unknown") {
-  // if (age === undefined) { old mothod with condition
-  //   age = "UnKnown";
-  // }
-  // age = age || "UnKnown"; old method with logic
-  return `Hi ${userName} your age ${age}`;
+function sum(...numbers) {
+  let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+  return `Result Of Numbers Is ${result}`;
 }
 
-console.log(sayHello("Shiref"));
+document.write(sum(20, 30, 100));
