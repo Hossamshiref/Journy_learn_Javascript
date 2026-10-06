@@ -1,23 +1,20 @@
-function calculate(firstNum, secondNum, operation) {
+function ageInTime(theAge) {
   // Your Code Here
-  if (operation === "add") {
-    document.write(`${firstNum + secondNum}<br>`);
-  } else if (operation === "subtract") {
-    document.write(`${firstNum - secondNum}<br>`);
-  } else if (operation === "multiply") {
-    document.write(`${firstNum * secondNum}<br>`);
-  } else if (operation === "") {
-    document.write(`${firstNum + secondNum}`);
-  }
+  let inMonths = theAge * 12;
+  let inDays = inMonths * 30;
+  let inHours = inDays * 24;
+  let inMinutes = inHours * 60;
+  let inSeconds = inMinutes * 60;
 
-  if (typeof secondNum === "undefined") {
-    document.write(`Second Number Not Found<br>`);
-  }
+  if (theAge > 10 && theAge < 100) {
+    console.log(`your Age In Months => ${inMonths} Month`);
+    console.log(`your Age In Days => ${inDays} Day`);
+    console.log(`your Age In Hours => ${inHours} Hour`);
+    console.log(`your Age In Minutes => ${inMinutes} Minutes`);
+    console.log(`your Age In Seconds => ${inSeconds} Second`);
+  } else console.log(`Age Out Of Range`);
 }
 
 // Needed Output
-calculate(20); // Second Number Not Found
-calculate(20, 30); // 50
-calculate(20, 30, "add"); // 50
-calculate(20, 30, "subtract"); // -10
-calculate(20, 30, "multiply"); // 600
+ageInTime(110); // Age Out Of Range
+ageInTime(38); // Months Example => 456 Months
