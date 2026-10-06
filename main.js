@@ -1,14 +1,23 @@
-function sayHello(theName, theGender) {
+function calculate(firstNum, secondNum, operation) {
   // Your Code Here
+  if (operation === "add") {
+    document.write(`${firstNum + secondNum}<br>`);
+  } else if (operation === "subtract") {
+    document.write(`${firstNum - secondNum}<br>`);
+  } else if (operation === "multiply") {
+    document.write(`${firstNum * secondNum}<br>`);
+  } else if (operation === "") {
+    document.write(`${firstNum + secondNum}`);
+  }
 
-  if (theGender === "Male" || theGender === "male") {
-    document.write(`Hello Mr ${theName}<br>`);
-  } else if (theGender === "Female" || theGender === "female") {
-    document.write(`Hello Miss ${theName}<br>`);
-  } else document.write(`Hello ${theName}<br>`);
+  if (typeof secondNum === "undefined") {
+    document.write(`Second Number Not Found<br>`);
+  }
 }
 
 // Needed Output
-sayHello("Osama", "Male"); // "Hello Mr Osama"
-sayHello("Eman", "Female"); // "Hello Miss Eman"
-sayHello("Sameh"); // "Hello Sameh"
+calculate(20); // Second Number Not Found
+calculate(20, 30); // 50
+calculate(20, 30, "add"); // 50
+calculate(20, 30, "subtract"); // -10
+calculate(20, 30, "multiply"); // 600
