@@ -1,30 +1,7 @@
-function getDetails(zName, zAge, zCountry) {
-  function namePattern(zName) {
-    // Write Your Code Here
-    // Osama Mohamed => Osama M.
-    // Ahmed ali => Ahmed A.
-    return `${zName.slice(0, zName.indexOf(" "))} ${zName.slice(zName.indexOf(" ") + 1, zName.indexOf(" ") + 2).toUpperCase()}.`;
-  }
-  function ageWithMessage(zAge) {
-    // Write Your Code Here
-    // 38 Is My Age => Your Age Is 38
-    // 32 Is The Age => Your Age Is 32
-    return `Your Age Is ${parseInt(zAge)}`;
-  }
-  function countryTwoLetters(zCountry) {
-    // Write Your Code Here
-    // Egypt => You Live In EG
-    // Syria => You Live In SY
-    return `You Live In ${zCountry.slice(0, 2).toUpperCase()}`;
-  }
-  function fullDetails() {
-    return `Hello ${namePattern(zName)}, ${ageWithMessage(zAge)}, ${countryTwoLetters(zCountry)}<br>`;
-  }
-  return fullDetails(); // Do Not Edit This
-}
+let itsMe = () => `Iam A Normal Function`;
 
-document.write(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
-// Hello Osama M., Your Age Is 38, You Live In EG
+console.log(itsMe()); // Iam A Normal Function
 
-document.write(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
-// Hello Ahmed A., Your Age Is 32, You Live In SY
+let urlCreate = (protocol, web, tld) => `${protocol}://www.${web}.${tld}`;
+
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
