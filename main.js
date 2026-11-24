@@ -1,16 +1,12 @@
 let nums = [1, 2, 3, 4, 5];
 
-let addMap = nums.map(function (el) {
-  return el + el;
-});
-document.write(`${addMap}<br>`);
-
-let addFilter = nums.filter(function (el) {
-  return el + el;
-});
-document.write(`${addFilter}<br>`);
-
-let filter = nums.filter(function (el) {
-  return el % 2 === 0;
-});
-document.write(`${filter}<br>`);
+let reduce = nums.reduce(function (acc, current, index, arr) {
+  document.write(`Accumulator is: ${acc}<br>`);
+  document.write(`Current is: ${current}<br>`);
+  document.write(`Index is: ${index}<br>`);
+  document.write(`Array is: ${arr}<br>`);
+  document.write(`Accumulator + Current = ${acc + current}<br>`);
+  document.write(`##########<br>`);
+  return acc + current;
+}, 10);
+document.write(`${reduce}`);
